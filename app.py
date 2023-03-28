@@ -38,6 +38,16 @@ def index():
     
     return f"Hola, mundo! Esta página ha sido vista {counter} veces"
 
+@app.route("/reset")
+def reset():
+    global counter
+    global numbers
+    
+    counter = 0
+    numbers = []
+    
+    return "Memoria reiniciada"
+
 @app.route("/numbers")
 def show_numbers():
     global numbers
