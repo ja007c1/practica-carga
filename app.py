@@ -34,6 +34,15 @@ def index():
     numbers.append(random.randint(1, 1000000000000))
     numbers.append(random.randint(1, 1000000000000))
     numbers.append(random.randint(1, 1000000000000))
+    numbers.append(random.randint(1, 1000000000000))
+    numbers.append(random.randint(1, 1000000000000))
+    numbers.append(random.randint(1, 1000000000000))
+    numbers.append(random.randint(1, 1000000000000))
+    numbers.append(random.randint(1, 1000000000000))
+    numbers.append(random.randint(1, 1000000000000))
+    numbers.append(random.randint(1, 1000000000000))
+    numbers.append(random.randint(1, 1000000000000))
+    numbers.append(random.randint(1, 1000000000000))
     
     
     return f"Hola, mundo! Esta página ha sido vista {counter} veces"
@@ -47,6 +56,11 @@ def reset():
     numbers = []
     
     return "Memoria reiniciada"
+
+@app.route("/healthcheck")
+def healthcheck():
+    return "OK"
+
 
 @app.route("/numbers")
 def show_numbers():
