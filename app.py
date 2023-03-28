@@ -31,21 +31,8 @@ def index():
     numbers.append(random.randint(1, 1000000000000))
     numbers.append(random.randint(1, 1000000000000))
     numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
     
-    
-    return f"Hola, mundo! Esta página ha sido vista {counter} veces"
+    return f"Esta página ha sido vista {counter} veces"
 
 @app.route("/reset")
 def reset():
