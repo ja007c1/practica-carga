@@ -17,11 +17,6 @@ def index():
     # Realizar un cálculo intensivo de manera repetida
     for i in range(1000000):
         x = i ** 2
-    for i in range(1000000):
-        x = i ** 2
-    for i in range(1000000):
-        x = i ** 2
-    
     return f"Esta página ha sido vista {counter} veces"
 
 @app.route("/reset")
