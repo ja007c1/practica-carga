@@ -13,24 +13,14 @@ def index():
     
     counter += 1
     numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
-    numbers.append(random.randint(1, 1000000000000))
+    
+    # Realizar un cálculo intensivo de manera repetida
+    for i in range(1000000):
+        x = i ** 2
+    for i in range(1000000):
+        x = i ** 2
+    for i in range(1000000):
+        x = i ** 2
     
     return f"Esta página ha sido vista {counter} veces"
 
