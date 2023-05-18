@@ -45,8 +45,8 @@ def memory_intensive():
     memory_list = []
     #for _ in range(100000):
     #    memory_list.append([0] * 100000)
-    for _ in range(1000):
-        memory_list.append([0] * 1000)
+    for _ in range(10000):
+        memory_list.append([0] * 10000)
     
     return "Uso intensivo de memoria realizado"
 
