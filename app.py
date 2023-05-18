@@ -33,6 +33,11 @@ def reset():
 def healthcheck():
     return "OK"
 
+@app.route("/numbers")
+def show_numbers():
+    global numbers
+    
+    return str(numbers)
 
 @app.route("/memory_intensive")
 def memory_intensive():
@@ -42,12 +47,6 @@ def memory_intensive():
         memory_list.append([0] * 100000)
     
     return "Uso intensivo de memoria realizado"
-
-@app.route("/numbers")
-def show_numbers():
-    global numbers
-    
-    return str(numbers)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
