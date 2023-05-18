@@ -43,8 +43,10 @@ def show_numbers():
 def memory_intensive():
     # Uso intensivo de memoria
     memory_list = []
-    for _ in range(100000):
-        memory_list.append([0] * 100000)
+    #for _ in range(100000):
+    #    memory_list.append([0] * 100000)
+    for _ in range(1000):
+        memory_list.append([0] * 1000)
     
     return "Uso intensivo de memoria realizado"
 
