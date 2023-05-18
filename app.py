@@ -34,6 +34,15 @@ def healthcheck():
     return "OK"
 
 
+@app.route("/memory_intensive")
+def memory_intensive():
+    # Uso intensivo de memoria
+    memory_list = []
+    for _ in range(100000):
+        memory_list.append([0] * 100000)
+    
+    return "Uso intensivo de memoria realizado"
+
 @app.route("/numbers")
 def show_numbers():
     global numbers
